@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystals Collector</title>
+	
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+	<h1 id="gameTitle">Crystals Collector!</h1>
+	
+	<div id="instructions">
+		<p>You will be be given a random number at the start of the game.</p>
+		<p>There are four crytsals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number</p>
+		<p>The value of each crystal is hidden from you until you click on it</p>
+		<p>Each time when the game starts, the game will change the values of each crystal</p>
+	</div>
+	<div>
+		<h1 id="randomNumber">0</h1>
+	</div>
+	<div id="gameStatus">
+		<p id="winsScore">Wins: 0</p>
+		<p id="lossScore">Losses: 0</p>
+	</div>
+	<div id="crystalRow">
+		<img id="red" class="crystal-images" src="assets/images/a.jpg" onclick="myRedFunction()">
+		<img id="blue" class="crystal-images" src="assets/images/b.jpg" onclick="myBlueFunction()">
+		<img id="yellow" class="crystal-images" src="assets/images/c.jpg" onclick="myYellowFunction()">
+		<img id="green" class="crystal-images" src="assets/images/d.jpg" onclick="myGreenFunction()">
+	</div>
+	<div>
+		<h3 id="scoreText">Your total score is:</h3>
+		<h1 id="totalScore">0</h1>
+	</div>
+	<h1 id="scoreComment"></h1>
+
+</body>
+</html>
